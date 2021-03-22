@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    /* min-height: 100vh; */
+}
+
+/* =========================HOME========================== */
+.home__wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 95vh;
+    background-color: #fafeff;
+}
+
+/* ====================REGISTRATION================= */
+.registration__wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 95vh;
+    background-color: #fafeff;
+    position: relative;
+}
+
+/* =========================SIGN IN FORM============================= */
+.signinForm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.signinForm label {
+    margin-top: 10px;
+}
+
+/* ======================REGISTRATION FORM============================ */
+.registrationForm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+label, input {
+    display: block;
+    margin: 2px 0;
+}
+
+label {
+    color: rgb(14, 14, 14);
+    margin-top: 5px;
+}
+
+input {
+    width: 280px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+button {
+    width: 280px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+
+/* ======================NAVIGATION BAR========================== */
+.nav-wrapper {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26 63 109);
+    margin: 0;
+    padding: 0 20px;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-label:hover {
+    color: #e98c15 !important;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.logo {
+    height: 70px;
+    padding: 5px;
+}
+
+
+
+/* ==================FOOTER==================== */
+.footer__wrapper {
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(26 63 109);
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
